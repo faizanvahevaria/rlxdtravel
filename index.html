@@ -30,7 +30,7 @@
                 Donec odio. Quisque vol utpat mattis eros.
               </h2>
               <p class="hero-description">Lorem ipsum dolor sit amet, consectetuer adi piscing elit. Donec odio. Quisque volut.</p>
-              <a href="#" class="btn hero-cta"> <img src="logo-button.png" alt="connect RLXD Travel with TripIt"> <span>Connect With TripIt</span></a>
+              <a href="#" class="btn cta-button"> <img src="logo-button.png" alt="connect RLXD Travel with TripIt"> <span>Connect With TripIt</span></a>
             </div>
           </div>          
           <div class="col-sm-5 hero-img-section">
@@ -44,79 +44,61 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12 text-center">
-          <div class="bottom-font f18">
-            <b> HOW IT WORKS</b>
-          </div>
-          <h2 class="top-font">Lorem ipsum dolor.</h2>
-          <div class="bottom-font">
-            <p>Lorem ipsum dolor sit amet, consectetuer adi 
-              piscing elit. Donec odio. Quisque volut.
-            </p>
-          </div>
+          <p class="hiw-pre">HOW IT WORKS</p>
+          <h2 class="hiw-title">Lorem ipsum dolor.</h2>
+          <p class="hiw-description">Lorem ipsum dolor sit amet, consectetuer adi piscing elit. Donec odio. Quisque volut.</p>          
         </div>
-        <div class="col-sm-4">
-          <div class="box"></div>
-          <div class="bottom-font f18 text-center">
-            <p>Lorem ipsum dolor sit 
-              amet, consectetuer adi piscing elit. Donec 
-              odio. Quisque volut dolor este et.
-            </p>
-          </div>
+
+        <div class="col-sm-4 hiw-box">
+          <img src="temp-img-1.jpg" alt="">
+          <p>Lorem ipsum dolor sit amet, consectetuer adi piscing elit. Donec odio. Quisque volut dolor este et.</p>
         </div>
-        <div class="col-sm-4">
-          <div class="box"></div>
-          <div class="bottom-font f18 text-center">
-            <p>  Lorem ipsum dolor sit amet, 
-              consectetuer adi piscing elit. Donec 
-              odio. Quisque volut dolor este et.
-            </p>
-          </div>
+        <div class="col-sm-4 hiw-box">
+          <img src="temp-img-2.jpg" alt="">
+          <p>Lorem ipsum dolor sit amet, consectetuer adi piscing elit. Donec odio. Quisque volut dolor este et.</p>
         </div>
-        <div class="col-sm-4">
-          <div class="box"></div>
-          <div class="bottom-font f18 text-center">
-            <p> Lorem ipsum dolor sit amet, 
-              consectetuer adi piscing elit. Donec
-              odio. Quisque volut dolor este et.
-            </p>
-          </div>
+        <div class="col-sm-4 hiw-box">
+          <img src="temp-img-3.jpg" alt="">
+          <p>Lorem ipsum dolor sit amet, consectetuer adi piscing elit. Donec odio. Quisque volut dolor este et.</p>
         </div>
       </div>
+      
       <hr>
-      <div class="row">
-        <div class="col-sm-12 text-center mb8">
-          <h2 class="top-font">
-            Lorem ipsum dolor sit amet, 
-            consectetuer adipiscing elit.
-          </h2>
-          <div class="bottom-font">
-            <p> Lorem ipsum dolor sit amet, consectetuer adi piscing 
-              elit.Donec odio. Quisque volut. Lorem ipsum dolor sit 
-              amet, consectetuer adi piscing elit. 
-            </p>
-          </div>
-          <button class="btn btn-warning text-white f18 bottom-font"> 
-          <img src="logo-button.png" class="h40" alt="button"> 
-          Connect With TripIt
-          </button>
+
+      <div class="row cta-section">
+        <div class="col-sm-12 text-center">
+          <h2 class="cta-section-title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h2>
+          <p class="cta-section-description">Lorem ipsum dolor sit amet, consectetuer adi piscing elit.Donec odio. Quisque volut. Lorem ipsum dolor sit amet, consectetuer adi piscing elit. </p>
+          <a href="#" class="btn cta-button"> <img src="logo-button.png" alt="connect RLXD Travel with TripIt"> <span>Connect With TripIt</span></a>
         </div>
       </div>
     </div>
-    <footer class="bg-smoke">
-      <div class="container cont-pad">
-        <div class="row p20">
-          <div class="col-sm-7 plr3">
-            <h3 class="top-font f28">Don’t have Tripit?</h3>
-            <div class="bottom-font f18">
-              <span >Sign up for updates on our new beta version.</span>
+
+    <footer class="footer-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <p class="footer-cta-title">Don’t have Tripit?</p>
+            <div class="row">
+              <div class="col-sm-6">
+                <p class="footer-cta-description">Sign up for updates on our new beta version.</p>
+              </div>
+              <div class="col-sm-6">
+                <form action="">
+                  <div class="input-group">
+                    <input type="email" class="form-control" placeholder="Your Email" name="email" required>
+                    <div class="input-group-btn">
+                      <button class="btn btn-default" type="submit">&rarr;</button>
+                    </div>
+                  </div>
+                  
+                </form>
+              </div>
             </div>
+            
+
           </div>
-          <div class="col-sm-5 plr3">
-            <input type="text" placeholder="Your email" class="bg-smoke w30" style="border:none;border-bottom:2px solid black">
-            <a href="" class="f28 text-dark">
-              <img src="cta-arrow-right.gif" class="gif-img" alt="">
-            </a>
-          </div>
+          
         </div>
       </div>
     </footer>
@@ -130,9 +112,18 @@
     <script>
       $(document).ready(function() {
         //  hero image effect
-        var imgHeight = $(".hero-img").height() + "px";
-        var imgWidth = $(".hero-img").width() + "px";
-        $(".hero-img-box").css({ "height" : imgHeight, "width" : imgWidth});
+        function adjustBoxSize() {
+          var imgHeight = $(".hero-img").height() + "px";
+          var imgWidth = $(".hero-img").width() + "px";
+          $(".hero-img-box").css({ "height" : imgHeight, "width" : imgWidth});
+        }
+        
+        adjustBoxSize();
+        
+        $(window).resize(function() {
+          adjustBoxSize();
+        });
+        
       });
     </script>
 

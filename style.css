@@ -5,6 +5,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Vollkorn', serif;
 }
 
+h2 {
+  font-size: 42px;
+}
+
 .logo-txt {
   font-family: 'Poppins', sans-serif;
   font-size: 48px;
@@ -22,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 22px;
   margin-bottom: 45px;
 }
-a.hero-cta {
+a.cta-button {
   color: #f3973e;
   border-color: #f3973e;
   border-width: 2px;
@@ -36,14 +40,14 @@ a.hero-cta {
   text-align: center;
   padding-left: 50px;
 }
-a.hero-cta img {
+a.cta-button img {
   position: absolute;
   left: 0;
   top: 0;
   max-height: 100%;
 }
 @media screen and (max-width: 767px) {
-  a.hero-cta {
+  a.cta-button {
     display: block;
     margin: 0 auto 60px;
   }
@@ -66,8 +70,75 @@ a.hero-cta img {
 hr {
   background-color: black;
   border: 1px solid black;
+  margin-top: 90px;
+  margin-bottom: 120px;
+}
+
+
+
+.hiw-pre {
+  font-size: 18px;
+}
+.hiw-title {
+  max-width: 525px;
+  margin: 15px auto;
+}
+.hiw-description {
+  max-width: 650px;
+  margin: 30px auto 45px;
+  font-size: 20px;
+}
+.hiw-box img {
+  border: 2px solid black;
+  max-width: 100%;
+}
+.hiw-box p {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+
+.cta-section {
   margin-top: 60px;
   margin-bottom: 90px;
+}
+.cta-section-title {
+  max-width: 525px;
+  margin: 15px auto;
+}
+.cta-section-description {
+  max-width: 650px;
+  margin: 30px auto 45px;
+  font-size: 20px;
+}
+.cta-section a.cta-button {
+  background-color: #f3973e;
+  color:#fff;
+}
+
+
+.footer-section {
+  background-color: #F2F6F9!important;
+  padding: 90px 0;
+}
+.footer-cta-title {
+  font-size: 32px;
+  font-weight: bolder;
+}
+.footer-cta-description {
+  font-size: 20px;
+  margin-top: 30px;
+}
+.footer-section .input-group .form-control , .footer-section .input-group .btn {
+  border:none;
+  border-bottom:2px solid black;
+  background-color: #F2F6F9;
+  border-radius: 0;
+  font-size: 20px
+}
+.footer-section .input-group .btn {
+  font-size: 26px;
 }
 
 .f20 {
@@ -152,10 +223,6 @@ hr {
 
 .bg-smoke {
   background-color: #F2F6F9!important;
-}
-
-h2 {
-  font-size: 42px!important;
 }
 
 .box {
